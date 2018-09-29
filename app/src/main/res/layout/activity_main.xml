@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:bvp="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    tools:context="com.akashapplications.firestoragedemo.MainActivity">
+
+
+    <com.halilibo.bettervideoplayer.BetterVideoPlayer
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/player"
+        android:layout_above="@+id/btnLinear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        bvp:bvp_captionSize="20sp"
+        bvp:bvp_captionColor="@android:color/holo_blue_light"/>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Choose "
+            android:id="@+id/btnChoose"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Upload"
+            android:id="@+id/btnUpload"/>
+    </LinearLayout>
+
+</RelativeLayout>
